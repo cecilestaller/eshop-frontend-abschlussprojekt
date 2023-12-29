@@ -60,7 +60,7 @@ https://eshop-frontend-abschlussprojekt.netlify.app
 - netlify
 - JavaScript
 - GIT
-- RESTful API (DummyJSOM)
+- RESTful API (DummyJSON)
 - Figma
 - Trello
 - Miro
@@ -72,6 +72,6 @@ https://eshop-frontend-abschlussprojekt.netlify.app
 - [@KarakayaMetin8787](https://github.com/KarakayaMetin8787)
 - [@canyus70](https://github.com/canyus70)
 
-## API-Links
+## API-Link
 
 https://dummyjson.com/
