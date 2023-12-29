@@ -1,0 +1,148 @@
+.container_Onbaording {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.imageContainer_Onboarding {
+		overflow: clip;
+		margin: 20px auto 0 auto;
+		width: 430px;
+		height: 430px;
+		position: relative;
+		.cloud1_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 30%;
+			left: 0%;
+			width: 30%;
+		}
+		.cloud2_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 30%;
+			left: 75%;
+			width: 20%;
+		}
+		.cloud3_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 15%;
+			left: 75%;
+			width: 30%;
+		}
+		.vaseLeft_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 65%;
+			left: 10%;
+		}
+		.bag_Onbaording {
+			position: absolute;
+			z-index: 5;
+			top: 75%;
+			left: 70%;
+		}
+		.box_Onbaording {
+			position: absolute;
+			z-index: 4;
+			top: 80%;
+			left: 60%;
+		}
+		.chair_Onbaording {
+			position: absolute;
+			z-index: 4;
+			top: 75%;
+			left: 28%;
+		}
+		.person_Onbaording {
+			position: absolute;
+			z-index: 4;
+			left: 10%;
+			top: 55%;
+		}
+		.phone_Onbaording {
+			position: absolute;
+			z-index: 3;
+			left: 50%;
+			top: 55%;
+			width: 35%;
+			transform: translate(-50%, -50%);
+		}
+		.vaseRight_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 60%;
+			left: 65%;
+		}
+		.plant1_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 55%;
+			left: 90%;
+		}
+		.plant2_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			left: 0%;
+		}
+		.plant3_Onbaording {
+			position: absolute;
+			z-index: 2;
+			top: 55%;
+			left: 0%;
+		}
+		.background_Onbaording {
+			position: absolute;
+			z-index: 1;
+			width: 100%;
+			height: 100%;
+		}
+		@media (min-width: 900px) {
+			overflow: visible;
+			.blurLeft_Onboarding {
+				background-image: url(./../../assets/images/onboarding/backgroundOnboardingImage.svg);
+				background-repeat: no-repeat;
+				width: 430px;
+				height: 430px;
+				position: absolute;
+				left: -351px;
+				top: 47px;
+			}
+			.blurRight_Onboarding {
+				background-image: url(./../../assets/images/onboarding/backgroundOnboardingImage.svg);
+				background-repeat: no-repeat;
+				width: 430px;
+				height: 430px;
+				position: absolute;
+				right: -310px;
+				top: -29px;
+				transform: rotate(180deg);
+			}
+		}
+	}
+	.containerText_Onbaording {
+		text-align: center;
+		.h2_Onbaording {
+			font-family: "PoppinsBold", Arial, Helvetica, sans-serif;
+			margin-top: 10px;
+		}
+		.p_Onboarding {
+			margin-block: 20px;
+			max-width: 80vw;
+			margin-inline: auto;
+		}
+		.linkButton_Onbaording {
+			display: block;
+			text-align: center;
+			margin: 40px auto 0 auto;
+			text-decoration: none;
+			color: white;
+			background-color: var(--select);
+			padding-block: 6px;
+			border-radius: 9px;
+			width: 167px;
+		}
+	}
+}

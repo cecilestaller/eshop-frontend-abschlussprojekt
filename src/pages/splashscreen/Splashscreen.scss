@@ -1,0 +1,62 @@
+.background_Splashscreen {
+	text-align: center;
+	background-color: var(--select);
+	height: 100vh;
+	max-width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: backGround 1800 1s ease;
+	animation-delay: 1s;
+	.contentContainer_Splashscreen {
+		.logoIcon_Splashscreen {
+			margin: 0 auto;
+			animation: iconFlyin 1700ms 1 linear;
+			width: 100%;
+			transform: translate(0, 10%) scale(0.8);
+		}
+		.icon_Splashscreen {
+			margin: 0 auto;
+
+			animation: logoFlyin 1700ms 1 linear;
+		}
+		.text_Splashscreen {
+			color: white;
+			margin: 8px auto;
+			font-size: 1.2rem;
+		}
+	}
+}
+
+@keyframes logoFlyin {
+	0% {
+		transform: translate(-270%) scale(1.5) rotate(-90deg);
+	}
+	25% {
+		transform: translate(50%);
+	}
+	50% {
+		transform: translate(-20%) scale(1.3);
+	}
+	75% {
+		transform: translate(10%) scale(0.9);
+	}
+	100% {
+		transform: translate(0%) scale(1) rotate(0);
+	}
+}
+@keyframes iconFlyin {
+	0% {
+		transform: translate(0, -370%) scale(0.1);
+	}
+	25% {
+		transform: translate(0, 30%) scale(0.3);
+	}
+	50% {
+		transform: translate(0, -200%) scale(1.1);
+	}
+
+	100% {
+		transform: translate(0, 0%) scale(0.8);
+	}
+}

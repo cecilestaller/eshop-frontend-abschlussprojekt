@@ -1,0 +1,113 @@
+.slide {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	background: transparent;
+	backdrop-filter: blur(16px) brightness(80%);
+	z-index: 2;
+	top: -170vh;
+	transition: all 1s ease-in-out;
+	padding: 2.5%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex: 1;
+
+	article {
+		h3 {
+			margin-block: 4%;
+			color: white;
+			font-size: 4vh;
+			text-shadow: 0 0 3px black;
+		}
+		div {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 1vh;
+
+			p {
+				background-color: var(--backgroundItem);
+				padding: 4% 2%;
+				border-radius: 4px;
+				box-shadow: 0 0 2px 1px black;
+				&:active {
+					background-color: var(--select);
+					color: var(--color);
+				}
+			}
+		}
+	}
+
+	.btnWrapper {
+		display: flex;
+		padding-inline: 0;
+		justify-content: center;
+		.addFilterBtn {
+			width: 25vw;
+			border: none;
+				background-color: var(--select);
+			color: white;
+			font-size: 3vw;
+			padding-block: 3vw;
+			border-radius: 8px;
+			margin: 2vh auto;
+		}
+	}
+}
+.slideAktive {
+	top: 0;
+	position: fixed;
+}
+
+@media (min-width: 900px) {
+	.slide {
+		padding: 2% 5%;
+		article {
+			h3 {
+				margin-block: 1%;
+			}
+			div {
+				display: grid;
+				grid-template-columns: repeat(autofit, 1fr);
+				gap: 0.8vw 1vw;
+				width: 100%;
+				padding-inline: 10%;
+
+				p {
+					padding: 2%;
+					background-color: var(--backgroundItem);
+					border-radius: 4px;
+					box-shadow: 0 0 2px 1px black;
+					font-size: 1.3vw;
+					&:active {
+						background-color: var(--select);
+						color: var(--color);
+					}
+				}
+			}
+		}
+		.categoryBar {
+			margin: 0 auto;
+			a {
+				min-width: 4vw;
+				padding: 0.5%;
+			}
+		}
+
+		.btnWrapper {
+			display: flex;
+			padding-inline: 20%;
+			justify-content: space-around;
+			.addFilterBtn {
+				width: 10vw;
+					background-color: var(--select);
+				color: white;
+				font-size: 1.4vw;
+				padding-block: 2vh;
+				border-radius: 8px;
+				margin: 2vh auto;
+			}
+		}
+	}
+}

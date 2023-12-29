@@ -1,0 +1,151 @@
+.cartcontainer_Cart {
+    padding-block: 8vh;
+    min-height: 100vh;
+    .media_query {
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
+        @media (min-width: 900px) {
+            grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+        }
+        // @media (min-width: 576px) {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr;
+        //     gap: 5vh;
+        // }
+        // @media (min-width: 900px) {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr 1fr;
+        //     gap: 5vh;
+        // }
+        // @media (min-width: 1200px) {
+        //     display: grid;
+        //     grid-template-columns: 1fr 1fr 1fr 1fr;
+        //     gap: 5vh;
+        //     place-items: center;
+        // }
+    }
+    .cart_empty {
+        text-align: center;
+        padding-top: 20px;
+        grid-column: 2/3;
+        @media (min-width: 1200px) {
+            grid-column: 2/4;
+            
+        }
+    }
+    .price_container {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 5%;
+        background-color: var(--backgroundItem);
+        border-radius: 24px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+        margin-top: 8vh;
+        margin-bottom: 4vh;
+        @media (min-width: 900px) {
+            width: 50%;
+        }
+        h2 {
+            font-family: "PoppinsBold", Arial, Helvetica, sans-serif;
+            font-size: 2.5vh;
+            @media (min-width: 900px) {
+                font-size: 2.5vw;
+            }
+        }
+        p {
+            padding-block:4%;         
+            font-size: 2vh;
+            @media (min-width: 900px) {
+                font-size: 2vw;
+            }
+            &:nth-of-type(2) {
+                border-bottom: 1px solid var(--select);
+                padding-block:4%;        
+            }
+            &:nth-of-type(3) {
+                font-weight: 900;
+                padding-block:4%;         
+            }
+            span {
+                color: var(--select);
+            }
+        }
+        .checkout_btn {
+            font-family: "PoppinsBold", Arial, Helvetica, sans-serif;
+            font-size: 2vh;
+            color: var(--background);
+            width: 100%;
+            padding: 4%;
+            border-radius: 16px;
+            border: none;
+            background-color: var(--select);
+            margin-top: 6%;
+            @media (min-width: 900px) {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+.accordion {
+    font-size: 2vh;
+    background-color: var(--background);
+    color: var(--color);
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid var(--select);
+    outline: none;
+    transition: 0.4s;
+    border-radius: 24px;
+    padding: 4%;
+    text-align: center;
+    margin-block: 6%;
+    @media (min-width: 900px) {
+        font-size: 2vw;
+        padding: 4%;
+        margin-block: 6%;
+
+    }
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--select);
+   color: var(--background)
+  }
+  
+  .panel {
+    display: none;
+    overflow: hidden;
+    background: transparent;
+  }
+  .input_voucher {
+    font-size: 1.5vh;
+    width: 100%;
+    border: 2px solid var(--select);
+    border-radius: 8px;
+    padding: 4%;
+    background: transparent;
+    margin-block: 2%;
+    @media (min-width: 900px) {
+        font-size: 1.5vw;
+    }
+    &::placeholder {
+        color: var(--select);
+    }
+  }
+  .redeem_btn {
+    font-family: "PoppinsBold", Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    color: var(--background);
+    width: 100%;
+    padding: 4%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--select);
+    margin-block: 2%;
+    @media (min-width: 900px) {
+        font-size: 2vw;
+    }
+  }

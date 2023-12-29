@@ -1,0 +1,96 @@
+.searchWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+	margin-bottom: 3vw;
+	.containerIcons_Search {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-inline: 5%;
+		padding-top: 2vh;
+		padding-bottom: 1vh;
+		a {
+			.icon_Search {
+				width: 25vw;
+				@media (min-width: 900px) {
+					width: 13vw;
+				}
+			}
+			.loginImage_Search {
+				width: 4vh;
+			}
+		}
+		.LoginOut_Container {
+			display: flex;
+			flex-direction: row-reverse;
+			gap: 2.5vw;
+			a {
+				//logout
+				&:nth-of-type(2) {
+					transform: rotateY(180deg);
+				}
+			}
+		}
+	}
+	.searchContainer_Search {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 2vw;
+		.search {
+			input {
+				color: var(--select);
+				border: 3px solid var(--select);
+				height: 5vh;
+				width: 65vw;
+				border-radius: 1vw;
+				padding: 2vw;
+				font-size: 2.5vh;
+				background-color: rgba(128, 128, 128, 0.242);
+				&:focus {
+					outline: none;
+				}
+				&::placeholder {
+					color: var(--select);
+					padding-left: 3vh;
+					background: url(../../../public/img/Search.svg) left /
+						contain no-repeat;
+				}
+			}
+		}
+		.imageHolder {
+			width: 5vh;
+			background-color: var(--select);
+			cursor: pointer;
+			aspect-ratio: 1/1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 1vw;
+			padding: 1%;
+			img {
+				width: 100%;
+				aspect-ratio: 1/1;
+			}
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.searchWrapper {
+		.search {
+			input {
+				width: 45vw;
+				font-size: 2vw;
+				&::placeholder {
+					padding-left: 2.3vw;
+				}
+			}
+		}
+	}
+	.imageHolder {
+		width: 4vw !important;
+		padding: 0.5% !important;
+	}
+}

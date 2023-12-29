@@ -1,0 +1,142 @@
+.cartPage_wrap{
+    padding:5%;
+    background-color: var(--background);
+    @media (min-width: 576px){
+        text-align: center;
+    }
+        .headerTitle_cart{
+            // text-align: center;
+            max-width: 80%;
+            margin: 0 auto;
+            display: inline-block;
+            font-size: 3vh;
+        }
+        .heart_wrap_cart{
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+        }
+    .detailCard_wrap_cart{
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+        border-radius: 24px;
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            display: block;
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+        }
+        .info_wrap_cart{
+            background-color: var(--backgroundItem);
+            padding: 5%;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+
+            .firstFlex_wrap_cart{
+                display: flex;
+                justify-content: space-between;
+                text-align: left;
+                h2 {
+                    padding-top: 1vh;
+                    font-size: 1.8vh;
+                    height: 5vh;
+                    @media (min-width: 900px) {
+                        font-size: 2.3vh;
+                        line-height: 130%;
+                    }
+                }
+                .quantityCounter_wrap_cart{
+                    display: flex;
+                    align-items: center;
+                    p {
+                        padding: 6px;
+                        font-size: 3vh;
+                    }
+                    button {
+                        font-size: 3vh;
+                        color: white;
+                        // padding: 15% 30%;
+                        width: 3.5vh;
+                        aspect-ratio: 1/1;
+                        border: none;
+                        border-radius: 4px;
+                        @media (min-width: 900px) {
+                            width: 3vh;
+                            font-size: 2vh;
+                        }
+                        &:nth-of-type(1){
+                            background-color: var(--selectSelected);
+                            &:hover{
+                                background-color: var(--select);
+                                cursor: pointer;
+                            }
+                        }
+                        &:nth-of-type(2){
+                            background-color: var(--select);
+                            &:hover{
+                                background-color: var(--select);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .rating_cart{
+                margin-top: 3.5vh;
+                margin-bottom: 1vh;
+                display: flex;
+                align-items: center;
+                @media (min-width: 900px) {
+                    margin-top: 4vh;
+                }
+            }
+            .secondFlex_wrap_cart{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                .stock_cart{
+                    color: #B9C1CC;
+                }
+                .price_cart {
+                    font-family: "PoppinsBold", Arial, Helvetica, sans-serif;
+                    font-size: 1.75rem;
+                    color: var(--select);
+                }
+            }
+        }
+    }
+
+    .descriptionHeadline_cart{
+        margin-top: 3vh;
+        margin-bottom: 1.5vh;
+        text-align: left;
+    }
+    .description_cart {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin-bottom: 4vh;
+        text-align: left;
+    }
+    .addToCart{
+        font-family: "PoppinsBold", Arial, Helvetica, sans-serif;
+        color: white;
+        width: 100%;
+        padding: 4%;
+        border-radius: 16px;
+        border: none;
+        background-color: var(--select);
+        &:hover{
+            background-color: var(--selectSelected);
+            cursor: pointer;
+        }
+        @media (min-width: 576px){
+            width: 500px;
+            padding: 24px 48px;
+        }
+    }
+}

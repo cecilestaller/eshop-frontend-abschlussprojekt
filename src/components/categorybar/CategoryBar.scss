@@ -1,0 +1,40 @@
+.categoryBar {
+	display: flex;
+	overflow-x: scroll;
+	max-width: fit-content;
+	margin: 4% 2.5%;
+	padding: 2px;
+	gap: 2vw;
+
+	a {
+		box-shadow: 0 0 2px black;
+		display: block;
+		flex: none;
+		flex-basis: 0;
+		flex-grow: 1;
+		min-width: 10vw;
+		aspect-ratio: 1 / 1;
+		background-color: var(--backgroundItem);
+		padding: 2%;
+		border-radius: 8px;
+		box-shadow: 0 0 4px rgb(42, 42, 42);
+
+		img {
+			width: 100%;
+			aspect-ratio: 1/1;
+		}
+	}
+}
+
+@media (min-width: 900px) {
+	.categoryBar {
+		justify-content: space-evenly;
+		gap: 1.5vw;
+		margin: 2% auto;
+		overflow-x: clip;
+		a {
+			min-width: 5vw;
+			padding: 1.3%;
+		}
+	}
+}

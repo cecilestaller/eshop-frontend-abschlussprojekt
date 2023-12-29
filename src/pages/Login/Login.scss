@@ -1,0 +1,126 @@
+.loginContainer_Login {
+    background-color: var(--background);
+    color: var(--color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    .loginDetails_Login {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        position: relative;
+        width: 50vh;
+        perspective: 3000px;
+        transform-style: preserve-3d;
+        .Login {
+            position: absolute;
+            height: 60vh;
+            width: 80vw;
+            transition: transform 1s, opacity 1s;
+            z-index: 2;            
+            @media (min-width: 900px) {
+                height: 74vh;
+            }
+            .LoginForm {
+                border-radius: 36px;
+                background-color: var(--backgroundLogin);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+                gap: 16px;
+                font-size: 4vw;
+                @media (min-width: 900px) {
+                    font-size: 2vw;
+                }
+                button {
+                    border-radius: 20px;
+                    padding: 10px;
+                    font-size: 4vw;
+                    width: 100%;
+                    background-color: var(--select);
+                    color: white;
+                    @media (min-width: 900px) {
+                        font-size: 2vw;
+                    }
+                }
+                input {
+                    border-radius: 20px;
+                    padding: 10px;
+                    font-size: 4vw;
+                    width: 100%;
+                    background-color: rgb(200, 200, 200);
+                    &:focus {
+                        outline: none;
+                    }
+                    @media (min-width: 900px) {
+                        font-size: 2vw;
+                    }
+                }
+                .submitButton_Login {
+                    background-color: var(--select);
+                    color: white;
+                }
+            }
+        }
+        .Register {
+            position: absolute;
+            height: 60vh;
+            width: 80vw;
+            transition: transform 1s, opacity 1s;
+            z-index: 2;
+            @media (min-width: 900px) {
+                height: 74vh;
+            }
+            .RegisterForm {
+                border-radius: 36px;
+                background-color: var(--backgroundLogin);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+                gap: 16px;
+                font-size: 4vw;
+                @media (min-width: 900px) {
+                    font-size: 2vw;
+                }
+                button {
+                    border-radius: 20px;
+                    padding: 10px;
+                    font-size: 4vw;
+                    width: 100%;
+                    background-color: var(--select);
+                    color: white;
+                    @media (min-width: 900px) {
+                        font-size: 2vw;
+                    }
+                }
+                input {
+                    border-radius: 20px;
+                    padding: 10px;
+                    font-size: 4vw;
+                    width: 100%;
+                    background-color: rgb(200, 200, 200);
+                    &:focus {
+                        outline: none;
+                    }
+                    @media (min-width: 900px) {
+                        font-size: 2vw;
+                    }
+                }
+                .submitButton_Login {
+                    background-color: var(--select);
+                    color: white;
+                }
+            }
+        }
+        .hide {
+            transform: rotateY(180deg);
+            opacity: 0;
+            z-index: 1;
+        }
+    }
+}
